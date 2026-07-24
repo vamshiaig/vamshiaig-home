@@ -101,11 +101,22 @@
     background: var(--panel);
     border: 1px solid var(--rule);
     border-radius: 10px;
-    padding: 1.25rem 1.35rem;
+    overflow: hidden;
     text-decoration: none;
     color: inherit;
   }
   .card:hover { border-color: var(--accent); }
+  .card .shot {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1002 / 544;
+    object-fit: cover;
+    object-position: top;
+    border-bottom: 1px solid var(--rule);
+    background: #0d0f12;
+  }
+  .card .body { padding: 1.15rem 1.35rem 1.3rem; }
   .card .name { font-weight: 650; margin: 0; }
   .card .desc { color: var(--muted); margin: 0.3rem 0 0; font-size: 0.95rem; }
   .card .go { color: var(--accent); font-size: 0.9rem; margin: 0.7rem 0 0; }
@@ -151,12 +162,16 @@
 
     <h2>Products</h2>
     <a class="card" href="https://viberesume.in">
-      <p class="name">Vibe Resume</p>
-      <p class="desc">
-        Free tools to turn a resume into a portfolio site, a shareable page, and more.
-        No sign-up required to try any of them.
-      </p>
-      <p class="go">viberesume.in &rarr;</p>
+      <img class="shot" src="/viberesume-hero.png" width="1002" height="544" loading="lazy"
+        alt="Vibe Resume homepage: turn a resume PDF into a shareable link">
+      <div class="body">
+        <p class="name">Vibe Resume</p>
+        <p class="desc">
+          Free tools to turn a resume into a portfolio site, a shareable page, and more.
+          No sign-up required to try any of them.
+        </p>
+        <p class="go">viberesume.in &rarr;</p>
+      </div>
     </a>
 
     <h2>Contact</h2>
