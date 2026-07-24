@@ -20,6 +20,14 @@ Pure static HTML, no build step, no dependencies. `index.html` is the whole site
 5. Wait for Vercel to show *Valid Configuration* on both domains (usually minutes; Namecheap TTL
    can take up to an hour).
 
+## Assets
+
+- `logo-300.png` / `logo.svg` — the **VaiG** brand mark (caps V/G white, lowercase `ai`
+  in coral `#ff8a7a` on a blue gradient). Used as the header lockup, `og:image`, and the
+  favicon's accent. This is the file uploaded to the LinkedIn Page.
+- `viberesume-hero.png` — Vibe Resume homepage screenshot (1002×544) leading the product card.
+  Source: `vibe-resume/marketing/screenshots/Hero Page.png`.
+
 ## Editing
 
 Everything is in `index.html` — copy, styles, and metadata. Light/dark both styled via
