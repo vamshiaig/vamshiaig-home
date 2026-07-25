@@ -70,11 +70,6 @@
     font-size: clamp(1.5rem, 4vw, 1.9rem);
     margin: 0;
   }
-  header .legal {
-    color: var(--muted);
-    font-size: 0.875rem;
-    margin: 0.35rem 0 0;
-  }
   h1 {
     font-size: clamp(1.6rem, 5vw, 2.4rem);
     line-height: 1.25;
@@ -110,7 +105,7 @@
     display: block;
     width: 100%;
     height: auto;
-    aspect-ratio: 1002 / 544;
+    aspect-ratio: 1002 / 360;
     object-fit: cover;
     object-position: top;
     border-bottom: 1px solid var(--rule);
@@ -120,13 +115,7 @@
   .card .name { font-weight: 650; margin: 0; }
   .card .desc { color: var(--muted); margin: 0.3rem 0 0; font-size: 0.95rem; }
   .card .go { color: var(--accent); font-size: 0.9rem; margin: 0.7rem 0 0; }
-  dl { margin: 0; }
-  dt {
-    font-size: 0.8125rem;
-    color: var(--muted);
-    margin-top: 1rem;
-  }
-  dd { margin: 0.15rem 0 0; }
+  .contact { margin: 0; font-size: 1.05rem; }
   footer {
     margin-top: 4rem;
     padding-top: 1.5rem;
@@ -167,7 +156,6 @@
         alt="Vamshi AIG logo: V, a, i, G with the letters a-i accented">
       <p class="mark">Vamshi AIG</p>
     </div>
-    <p class="legal">Limited Liability Partnership &middot; India</p>
   </header>
 
   <main>
@@ -193,10 +181,7 @@
     </a>
 
     <h2>Contact</h2>
-    <dl>
-      <dt>General enquiries</dt>
-      <dd><a href="mailto:hello@vamshiaig.com">hello@vamshiaig.com</a></dd>
-    </dl>
+    <p class="contact"><a href="mailto:contact@vamshiaig.com">contact@vamshiaig.com</a></p>
   </main>
 
   <footer>
