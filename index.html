@@ -135,6 +135,24 @@
     font-size: 0.85rem;
   }
   footer p { margin: 0.3rem 0 0; }
+  footer .legal-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.5rem 1rem;
+    flex-wrap: wrap;
+  }
+  footer .legal-top .name { font-weight: 700; color: var(--text); }
+  footer .legal-top .llpin { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  footer .addr {
+    font-size: 0.68rem;
+    line-height: 1.5;
+    margin-top: 0.4rem;
+  }
+  /* one line once the container is wide enough to hold it; wraps on phones/tablets */
+  @media (min-width: 46rem) {
+    footer .addr { white-space: nowrap; }
+  }
   @media (prefers-reduced-motion: reduce) {
     * { transition: none !important; animation: none !important; }
   }
@@ -182,11 +200,13 @@
   </main>
 
   <footer>
-    <p><strong>Vamshi AIG LLP</strong></p>
-    <p>LLPIN: ADA-3636</p>
-    <p>Registered office: No. 010301, Shriram Chirping Woods, HSR Layout,
+    <p class="legal-top">
+      <span class="name">VAMSHIAIG LLP</span>
+      <span class="llpin">LLPIN: ADA-3636</span>
+    </p>
+    <p class="addr">Registered office: No. 010301, Shriram Chirping Woods, HSR Layout,
       Bangalore South, Bangalore &ndash; 560102, Karnataka, India</p>
-    <p>&copy; 2026 Vamshi AIG LLP. All rights reserved.</p>
+    <p>&copy; 2026 VAMSHIAIG LLP. All rights reserved.</p>
   </footer>
 
 </div>
