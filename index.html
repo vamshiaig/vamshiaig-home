@@ -115,7 +115,6 @@
   .card .name { font-weight: 650; margin: 0; }
   .card .desc { color: var(--muted); margin: 0.3rem 0 0; font-size: 0.95rem; }
   .card .go { color: var(--accent); font-size: 0.9rem; margin: 0.7rem 0 0; }
-  .contact { margin: 0; font-size: 1.05rem; }
   footer {
     margin-top: 4rem;
     padding-top: 1.5rem;
@@ -133,6 +132,13 @@
   }
   footer .legal-top .name { font-weight: 700; color: var(--text); }
   footer .legal-top .llpin { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  footer .legal-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.3rem 1rem;
+    flex-wrap: wrap;
+  }
   footer .addr {
     font-size: 0.68rem;
     line-height: 1.5;
@@ -179,9 +185,6 @@
         <p class="go">viberesume.in &rarr;</p>
       </div>
     </a>
-
-    <h2>Contact</h2>
-    <p class="contact"><a href="mailto:contact@vamshiaig.com">contact@vamshiaig.com</a></p>
   </main>
 
   <footer>
@@ -191,7 +194,10 @@
     </p>
     <p class="addr">Registered office: No. 010301, Shriram Chirping Woods, HSR Layout,
       Bangalore South, Bangalore &ndash; 560102, Karnataka, India</p>
-    <p>&copy; 2026 VAMSHIAIG LLP. All rights reserved.</p>
+    <p class="legal-bottom">
+      <span>&copy; 2026 VAMSHIAIG LLP. All rights reserved.</span>
+      <a href="mailto:contact@vamshiaig.com">contact@vamshiaig.com</a>
+    </p>
   </footer>
 
 </div>
