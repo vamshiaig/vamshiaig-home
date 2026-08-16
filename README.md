@@ -25,8 +25,8 @@ Pure static HTML, no build step, no dependencies. `index.html` is the whole site
 - `logo-300.png` / `logo.svg` — the **VaiG** brand mark (caps V/G white, lowercase `ai`
   in coral `#ff8a7a` on a blue gradient). Used as the header lockup, `og:image`, and the
   favicon's accent. This is the file uploaded to the LinkedIn Page.
-- `viberesume-hero.png` — Vibe Resume homepage screenshot (1002×544) leading the product card.
-  Source: `vibe-resume/marketing/screenshots/Hero Page.png`.
+- `viberesume-hero.gif` — Vibe Resume PDF-to-site demo (900×480) leading the product card.
+  Source: `vibe-resume/public/vibe-resume-pdf-to-site.gif`.
 
 ## Editing
 
