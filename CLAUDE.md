@@ -6,6 +6,20 @@ One-page corporate site + product tabs for VAMSHIAIG LLP. Pure static HTML, no b
 Deployed on Vercel at `vamshiaig.com` / `www.vamshiaig.com`. Sibling deployed product:
 `shopfront` (Storefront, at `store.vamshiaig.com`), linked from the Products tabs here.
 
+## Working practices (repeated here because they keep slipping)
+
+- **Fix the class, not the instance.** A reported bug is one case of a pattern — grep for
+  sibling occurrences before patching, fix all confirmed ones in one pass.
+- **Verify before claiming done.** A green build/deploy proves no regression, not that a
+  never-observed behavior is correct — load the actual changed page/state before saying it
+  works, and say plainly which states were checked vs not.
+- **State known gotchas up front**, especially silent failure modes (Vercel domain ownership,
+  gh account context — see below).
+- **No overengineering, no under-scoping.** Minimal = smallest change that fixes the whole
+  confirmed problem, not the narrowest patch that silences one report.
+- **Epistemic honesty.** Say what was observed vs inferred; don't assert from absence of
+  evidence.
+
 ## Git / GitHub
 
 Remote is `github.com/vamshiaig/vamshiaig-home` (migrated from `vamshi-vadala/vamshiaig-site`
